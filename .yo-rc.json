@@ -39,6 +39,7 @@
       "hi",
       "en",
       "de"
-    ]
+    ],
+    "herokuDeployType": "git"
   }
 }
