@@ -1,0 +1,25 @@
+
+{
+    "naturalApp": {
+        "subCategory" : {
+            "home": {
+                "title": "SubCategories",
+                "createLabel": "नया Sub Category बनाएँ",
+                "createOrEditLabel": "Sub Category बनाएँ या संपादित करें"
+            },
+            "created": "एक नया Sub Category [identifier: {{ param }}] तैयार है",
+            "updated": "एक Sub Category [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Sub Category [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Sub Category [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Sub Category"
+            },
+            "name": "Name",
+            "isNatural": "Is Natural",
+            "category": "Category",
+            "product": "Product"
+        }
+    }
+}

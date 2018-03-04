@@ -1,0 +1,23 @@
+
+{
+    "naturalApp": {
+        "brand" : {
+            "home": {
+                "title": "Brands",
+                "createLabel": "Brand erstellen",
+                "createOrEditLabel": "Brand erstellen oder bearbeiten"
+            },
+            "created": "Brand erstellt mit ID {{ param }}",
+            "updated": "Brand aktualisiert mit ID {{ param }}",
+            "deleted": "Brand gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Brand {{ id }} wirklich dauerhaft gelöscht werden?"
+            },
+            "detail": {
+                "title": "Brand"
+            },
+            "brandName": "Brand Name",
+            "product": "Product"
+        }
+    }
+}

@@ -1,0 +1,48 @@
+
+entity Brand {
+	brandName String
+} 
+
+
+entity Category {
+	name String
+}
+relationship OneToMany {
+	Brand { product } to Product {Brand(brandName)}
+}
+
+entity SubCategory {
+	name String,
+    isNatural Boolean
+}
+
+
+relationship OneToMany {
+	Category { subcategory} to SubCategory{category(name)}
+}
+
+entity Product {
+	name String,
+    description String,
+    image ImageBlob,
+    price BigDecimal,
+    size Size
+}
+
+enum Size {
+	S, M, L
+}
+
+relationship ManyToMany {
+	Product {subcategory(name)} to SubCategory {product}
+}
+
+
+// Set pagination options
+paginate  * with infinite-scroll
+
+// Set service options to all except few
+service all with serviceImpl
+// Set an angular suffix
+angularSuffix * with kb
+

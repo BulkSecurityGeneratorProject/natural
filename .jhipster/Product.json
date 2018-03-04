@@ -1,0 +1,50 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "product",
+            "relationshipName": "subcategory",
+            "otherEntityName": "subCategory",
+            "otherEntityField": "name",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "brand",
+            "otherEntityName": "brand",
+            "otherEntityField": "brandName"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "image",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "image"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "size",
+            "fieldType": "Size",
+            "fieldValues": "S,M,L"
+        }
+    ],
+    "changelogDate": "20180304113628",
+    "entityTableName": "product",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "kb"
+}
