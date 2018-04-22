@@ -32,10 +32,10 @@
                 <td>{{product.name}}</td>
                 <td>{{product.description}}</td>
                 <td>
-                    <a *ngIf="product.image" (click)="openFile(product.imageContentType, product.image)">
+                    <!-- <a *ngIf="product.image" (click)="openFile(product.imageContentType, product.image)">
                         <img [src]="'data:' + product.imageContentType + ';base64,' + product.image" style="max-height: 30px;" alt="product image"/>
                     </a>
-                    <span *ngIf="product.image">{{product.imageContentType}}, {{byteSize(product.image)}}</span>
+                    <span *ngIf="product.image">{{product.imageContentType}}, {{byteSize(product.image)}}</span> -->
                 </td>
                 <td>{{product.price}}</td>
                 <td jhiTranslate="{{'naturalApp.Size.' + product.size}}">{{product.size}}</td>
